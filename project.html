@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event Booking Platform</title>
+  <link rel="stylesheet" href="./project.css">
+</head>
+<body>
+
+  <header>
+    <h1>Upcoming Events</h1>
+  </header>
+
+  <div class="event-container">
+    <div class="event-card">
+      <img src="./images/music night.jpeg" alt="Event 1">
+      <h2>Music Night</h2>
+      <p>Step into an unforgettable evening where melodies come alive and rhythm fills the air! Join us for Musical Night, a celebration of music, passion, and pure entertainment. From soulful solos to electrifying band performances, this night promises to captivate your senses and stir your soul.</p>
+      <button onclick="openBookingForm('Music Night')">Book Now</button>
+    </div>
+    <div class="event-card">
+      <img src="./images/tech talk.jpeg" alt="Event 2">
+      <h2>Tech Talk</h2>
+      <p>Join us for an inspiring Tech Talk — a thought-provoking session designed to spark curiosity, foster innovation, and dive deep into the cutting-edge trends shaping our digital world. Whether you're a tech enthusiast, a professional, or simply curious about the future, this event promises insights that matter.</p>
+      <button onclick="openBookingForm('Tech Talk')">Book Now</button>
+    </div>
+  </div>
+  <div class="About">
+    <p>ABOUT</p>
+    <div class="p1">
+      <p>
+        🎉Get Ready for an Exciting Lineup of Upcoming Events! 🎉
+
+We’re thrilled to announce two incredible events that promise to engage, entertain, and inspire! Whether you're a music lover or a tech enthusiast, there’s something special waiting for you.
+      </p>
+      <p>
+🎶 Musical Night – A Symphony of Sounds
+Immerse yourself in an evening of rhythm, melodies, and magical performances. Musical Night brings together talented artists, live music, and an atmosphere buzzing with energy. From soothing acoustic sets to high-energy acts, it’s a night you won’t forget.
+
+🗓️ Date: [27.07.2025]
+📍 Venue: [Tirunelveli]
+      </p>
+      <p>
+        💡 Tech Talk – Where Innovation Meets Insight
+Join us for an enlightening Tech Talk that dives into the latest trends and breakthroughs in technology. Hear from industry experts, explore real-world applications, and gain fresh perspectives on the future of tech.
+
+🗓️ Date: [27.07.2025]
+📍 Venue: [Tirunelveli]
+      </p>
+    </div>
+  </div>
+
+  <!-- Booking Form (Modal) -->
+  <div class="modal" id="bookingModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeBookingForm()">&times;</span>
+      <h2 id="eventTitle">Book Event</h2>
+      <form id="bookingForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <button type="submit">Confirm Booking</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer">
+    <p class="final">THANK YOU</p>
+  <div class="Copy">
+    &copy; Copyrights for the event,events registeration are reserved.
+  </div>
+  </div>
+  <script src="./project.js"></script>
+ 
+</body>
+</html>
